@@ -41,8 +41,9 @@ const COT_ASSET_MAP = {
   'CORN':     'CORN',
   'SOYBEANS': 'SOYBEANS',
   'BTC':      'BITCOIN',
-  'NASDAQ':   'NASDAQ-100',
-  'SP500':    'S&P 500',
+  'NASDAQ':   'E-MINI NASDAQ-100',
+  'SP500':    'E-MINI S&P 500',
+
 };
 
 function calcSentiment(ncLong, ncShort, prevNcLong, prevNcShort) {
