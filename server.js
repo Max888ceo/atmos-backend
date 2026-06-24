@@ -209,10 +209,8 @@ app.get('/api/news', async (req, res) => {
     if (!apiKey) return res.status(500).json({ error: 'NEWSAPI_KEY not configured' });
 
     // Whitelist of quality financial/macro sources only
-    const SOURCES = [
-      'reuters', 'bloomberg', 'the-wall-street-journal', 'financial-times',
-      'the-economist', 'fortune', 'business-insider', 'cnbc', 'msnbc',
-      'the-washington-post', 'associated-press', 'axios'
+    jsconst SOURCES = [
+      'bloomberg', 'cnbc', 'the-wall-street-journal', 'fortune'
     ].join(',');
 
     const url = `https://newsapi.org/v2/everything` +
